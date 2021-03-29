@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  width: 100%;
+  background-color: #17191b;
+  color: white;
+  padding: 1% 1% 1% 1%;
+}
+
+.navbar button {
+  background-color: Transparent;
+  border: none;
+  color: #c7d2de;
+  cursor: pointer;
+  font-size: 22px;
+  outline: none;
+  margin-top: 0.5%;
+}
+
+.navbar button:hover {
+  color: #e2e7ec;
+}
+
+.navbar li {
+  display: inline;
+  font-size: 25px;
+}
+
+.home-button {
+  margin-left: 1%;
+}
+@media (max-width: 480px) {
+  .home-button {
+    margin-left: 2%;
+  }
+}
+
+.profile-button {
+  float: right;
+  margin-right: 1%;
+}
+@media (max-width: 480px) {
+  .profile-button {
+    padding-top: 1%;
+  }
+}
+
+/* Main Container & User Container */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid #000;
+  padding: 30px;
+  border-radius: 15px;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 350px;
+  }
+}
+
+.user-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid #000;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .user-container {
+    width: 350px;
+  }
+}
+
+.user-container-things {
+  padding: 5%;
+  font-size: 20px;
+  font-family: 'Consolas';
+}
+@media (max-width: 480px) {
+  .user-container-things {
+    font-size: 15px;
+    padding: 10%;
+  }
+}
+
+.user-container-things button {
+  color: #6dabe9;
+  cursor: pointer;
+  margin-top: 10%;
+  background-color: Transparent;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+@media (max-width: 480px) {
+  .user-container-things button {
+    font-size: 15px;
+  }
+}
+
+.user-container input {
+  margin-bottom: 5%;
+  margin-left: 5%;
+  font-size: 20px;
+  width: 100%;
+  max-width: 280px;
+}
+@media (max-width: 480px) {
+  .user-container input {
+    font-size: 15px;
+  }
+}
+
+.email-style {
+  margin-right: 42%;
+}
+@media (max-width: 480px) {
+  .email-style {
+    margin-right: 74%;
+  }
+}
+
+.password-style {
+  margin-right: 35%;
+}
+@media (max-width: 480px) {
+  .password-style {
+    margin-right: 64%;
+  }
+}
+
+.password-confirmation-style {
+  margin-right: 5%;
+}
+@media (max-width: 480px) {
+  .password-confirmation-style {
+    margin-right: 26%;
+  }
+}
+
+/* Header inside of the Container */
+
+.header {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.header h1 {
+  font-family: 'Segoe Print';
+  text-align: center;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .sub-header {
+    display: block;
+    font-size: 10px;
+  }
+}
+
+.sub-header h3 {
+  font-family: 'Tahoma';
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.sub-header img {
+  width: 4%;
+  margin-left: 60%;
+  margin-bottom: 0.5%;
+}
+@media (max-width: 480px) {
+  .sub-header img {
+    width: 15%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    display: block;
+    float: left;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+@media (max-width: 480px) {
+  .btn {
+    float: right;
+    display: block;
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.add-form {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: 'Verdana';
+}
+
+/* Shows & Body of the Container */
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.show {
+  width: 100%;
+  background: #f4f4f4;
+  margin: 0.4%;
+  padding: 0.9% 1.7%;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .show {
+    margin: 0.5%;
+    font-size: 5px;
+    padding-top: 5%;
+    display: inline-block;
+  }
+}
+
+.edit-tool {
+  margin: 300px;
+  margin-left: 750px;
+  height: 80px;
+  width: 400px;
+  background-color: white;
+  border: '4px solid #000';
+  padding: 2 5 3;
+  display: block;
+}
+@media (max-width: 480px) {
+  .edit-tool {
+    margin: 100px;
+    margin-top: 300px;
+    margin-left: 70px;
+    width: 250px;
+    height: 150px;
+    padding-left: 15px;
+  }
+}
+
+.edit-tool input {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 200px;
+}
+@media (max-width: 480px) {
+  .edit-tool input {
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.show-edit {
+  margin: 0px 2px;
+  margin-bottom: -1px;
+}
+
+.show-text {
+  font-size: 18px;
+}
+@media (max-width: 480px) {
+  .show-text {
+    font-size: 15px;
+    padding: 5%;
+    overflow-wrap: break-word;
+  }
+}
+
+.show-buttons {
+  cursor: pointer;
+}
+
+.no-tvshows {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
